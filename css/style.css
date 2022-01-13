@@ -1,20 +1,200 @@
-body{
-    background-color: #121E6E;
-    font-size: 20px
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
 
-img{
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #242f6e;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+header{
+    background-color: #222831;
+    color: white;
+    height: 60px;
     width: 100%;
-    border-radius: 5px;
-    transition: 0.2s transform;
-    margin: 2%;
+    position: fixed;
+}
+
+header > nav > ul{
+    height: 100%;
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    gap: 10px;
+}
+
+header > nav > ul > li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(42, 45, 73);
+}
+
+header > nav > ul > li > a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+figure > img{
+    width: 100%;
+}
+
+article > img{
+    padding-left: 33%;
 }
 
 h1{
     color: white;
+    background-color: #222831;
+    font-size: 250%;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    margin: 0 auto;
 }
 
 p{
+    color: rgb(220, 220, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 39);
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80vw;
+    height: 70px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button{
+    background-color: rgb(39, 39, 77);
+    color:rgb(220, 220, 240);
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    background-color: rgb(61, 61, 121);
+    cursor: pointer;
+}
+
+#img{
+    width:70%;
+    margin: 0 auto;
+}
+
+article > ul{
+    color: rgb(220, 220, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(23, 23, 39);
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80vw;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    gap: 5%;
+    list-style: none;
+}
+
+#windroos{
+    padding-bottom: 50px;
+}
+
+#schipImg{
+    width: 90%;
+    padding-left: 20%;
+    padding-right: 10%;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+#reviews, #reviews2{
+    color: black;
+    background-color: white;
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 80px;
+    gap: 40px;
+}
+
+
+h2, h3, h5{
+    color: rgb(220, 220, 240);
+    background-color: rgb(23, 23, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h4 > a{
+    color: rgb(16, 16, 27);
+    background-color: rgb(26, 248, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 70px;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #222831;
     color: white;
-    background-color: black;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    gap: 10%;
+}
+
+
+@media screen and (max-width:1000px) {
+    header{
+        height: 40px;
+    }
 }

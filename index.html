@@ -4,31 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheepvaartmuseum</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Scheepvaartmuseum</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header></header>
-<h1>Scheepsvaart Museum</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#tentoonstellingen">Tentoonstellingen</a></li>
+                <li><a href="#route">Interactieve route</a></li>
+                <li><a href="#tickets">Tickets</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact"> Contactgegevens</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <h1 id="Home">Het Scheepvaartmuseum</h1>
+        <figure>
+            <img src="Foto/BeginFoto.jpeg" alt="Het VOC schip met het museum op de achtergrond">
+        </figure>
 
-<p>
-<img src="Foto/BeginFoto.jpeg">
-</p>
-
-<p>
-    Kom nu kijken naar een van de 
-    grootste maritieme collecties ter 
-    wereld en beleef 500 jaar aan 
-    Nederlands maritieme geschiedenis!
-</p>
-
-<p>
-    test
-</p>
-
-<p>
-<a href="https://www.google.nl/maps/place/Het+Scheepvaartmuseum/@52.3715755,4.914783,16.44z/data=!4m5!3m4!1s0x47c609a14eabed5f:0x59a81b9e66483986!8m2!3d52.3716667!4d4.915">Locatie</a>
-</p>
+        <p>
+            Kom nu kijken naar een van de grootste maritieme collecties ter 
+            wereld en beleef 500 jaar aan Nederlands maritieme geschiedenis! 
+            Koop nu binnen vijf minuten uw tickets voor de volgende dag!
+        </p>
     
+        <figure>
+            <img src="Foto/VOCschipHeenenWeer.gif" alt="Een zeil schip die heen en weer op het scherm gaat">
+        </figure>
+    </article>
+
+        <p>
+            Het Scheepvaartmuseum begon in 1916 na een succesvolle tentoonstelling in 1913.
+            Het verhuisde in 1973 naar amsterdam in het ‘s Lands zeemagazijn.
+            en na de renovatie tussen 2007 tot 2009 is het museum weer helemaal nieuw en verbeterd.    
+        </p>
+    <p></p>
+    <article>
+        <h3 id="tentoonstellingen">Tentoonstellingen</h3>
+        <p>
+            Het Scheepvaartmuseum heeft vier verschillende vleugels: de noordvleugel, de Oostvleugel, de Zuidvleugel en de Westvluegel. 
+            Je komt via de Zuidvleugel binen en daarna mag jij bepalen in welke volgorde je de vleugels afgaat.
+        </p>
+
+     <button class="button" onclick="onClickNext()">Volgende afbeelding</button>
+     <button class="button" onclick="onClickPrevious()">Vorige afbeelding</button>   
+     <img id="img" src="foto/1.jpg" alt="Glazen dak" >
+
+     <script>
+        var position = 0;
+        var img1 = "foto/1.jpg";
+        var img2 = "foto/2.jpg";
+        var img3 = "foto/3.jpg";
+        var img4 = "foto/4.jpg";
+        var img5 = "foto/5.jpg";
+        var img6 = "foto/6.jpg";
+        var img7 = "foto/7.jpg";
+        var imgElement = document.getElementById("img");
+
+        function onClickNext(){
+
+            position = position + 1;
+
+            if(position == 7){
+                position = 0;
+            }
+            setImage();
+        }    
+        function onClickPrevious(){
+            position = position - 1;
+
+            if(position == -1){
+                position = 6;
+            }
+            setImage();
+        }
+
+        function setImage(){
+            if(position == 0){
+                imgElement.src = img1;
+            }
+            else if(position == 1){
+                imgElement.src = img2;
+            }
+            else if(position == 2){
+                imgElement.src = img3;
+            }
+            else if(position == 3){
+                imgElement.src = img4;
+            }
+            else if(position == 4){
+                imgElement.src = img5;
+            }
+            else if(position == 5){
+                imgElement.src = img6;
+            }
+            else if(position == 6){
+                imgElement.src = img7;
+            }
+        }
+     </script>
+
+        <h5>Westvleugel:</h5>
+        <ul>
+            <li>Amsterdam Havenstad</li>
+            <li>Verhaal van de Walvis</li>
+        </ul>
+
+        <h5>Noordvleugel:</h5>
+        <ul>
+            <li>WIllem van de Velde & Zoon</li>
+            <li>Hoofdgalerij: Republiek</li>
+            <li>Dare to Discovery | a VR journey</li>
+        </ul>
+        <ul>
+            <li>Koningssloep</li>
+            <li>VOC-schip Amsterdam</li>
+            <li>Stoomschip Christiaan Brunings</li>
+        </ul>
+        <h5>Oostvleugel:</h5>
+        <ul>
+            <li>Cartografie & curiosa</li>
+            <li>De Jachtmodellen</li>
+            <li>De Navigatie Instrumenten</li>
+        </ul>
+        <ul>
+            <li>De Scheepsornamenten</li>
+            <li>Een Verloren Gewaand Manuscript</li>
+        </ul>
+        <p></p>
+    </article>
+
+    <article>
+        <h3 id="route">Interactieve route</h3>
+        <p>
+            Klik op een van de windrichtingen om de Interactieve route te starten bij de geslecteerde vleugel!
+        </p>
+        <img id="windroos" src="Foto/windroos.png" alt="Een windroos">
+    </article>
+
+    <article>
+        <h3 id="tickets">Tickets</h3>
+        <ul>
+            <li>Volwassene €17,50</li>
+            <li>Jeugd vanaf 4-17 jaar €8,50</li>
+            <li>Kind €0</li>
+        </ul>
+        <h4><a href="#Betalen">Betalen ></a></h4>
+    <img id="schipImg" src="foto/schip.jpg" alt="Het VOC schip voor het Museum">
+    </article>
+    <article>
+        <h5>Reviews</h5>
+        <ul id="reviews">
+            <li>Wat is dit een leuk museum! - 9/10⭐ -Abigail de Boer</li>
+            <li>Ik had niet verwacht het zo leuk te hebben - 7/10⭐ -Rick van der aap</li>
+            <li>Saaiste dag van mijn leven - 1/10⭐ -Tommy Steen</li>
+        </ul>
+        <ul id="reviews2">
+            <li>Het voc schip was een beetje telerustellend - 6/10⭐ -Karel Arend</li>
+            <li>We waren de tickets kwijt, maar het lijkt me leuk - 10/10⭐ -Renee van Kouw</li>
+            <li>Cool 👍 - 7/10⭐ -Fredrick Scharrel</li>
+        </ul>
+    </article>
+    <footer id="contact">
+        <ul>
+           <li>Kattenburgerplein 1</li>
+           <li>1018 KK Amsterdam</li>
+           <li>020 523 2222</li>
+           <li>info@hetscheepvaartmuseum.nl</li> 
+        </ul>
+            
+        <ul>
+            <li>museum | dinsdag t/m zondag 10.00 - 17.00 uur</li>
+            <li>winkel | dinsdag t/m zondag 10.00 - 17.00 uur</li>
+            <li>bibliotheek | dinsdag t/m vrijdag 10.00 - 17.00 uur</li> 
+        </ul>
+
+    </footer>
 </body>
 </html>
