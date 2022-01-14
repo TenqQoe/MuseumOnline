@@ -132,6 +132,10 @@ article > ul{
 
 #windroos{
     padding-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 #schipImg{
