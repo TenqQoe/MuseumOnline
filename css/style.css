@@ -202,3 +202,18 @@ footer{
         height: 40px;
     }
 }
+
+#container{
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px black;
+}
+
+#MyInteraction{
+    Padding: 10px;
+    
+}
