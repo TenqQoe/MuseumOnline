@@ -110,19 +110,26 @@ button:hover{
     padding-bottom: 25px;
 }
 
+#vleugel{
+    color: rgb(220, 220, 240);
+    background-color: rgb(23, 23, 39);
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 25px;
+}
+
 article > ul{
     color: rgb(220, 220, 240);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     background-color: rgb(23, 23, 39);
     margin-left: 10%;
     margin-right: 10%;
     width: 80vw;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding:25px;
     gap: 5%;
     list-style: none;
 }
@@ -164,7 +171,7 @@ h2, h3, h5{
     margin-right: 10%;
     width: 80vw;
     margin: 0 auto;
-    padding: 10px;
+    padding: 25px;
 }
 
 h4 > a{
@@ -197,6 +204,7 @@ footer{
     header{
         height: auto;
     }
+
     nav{
         width: 100%;
     }
@@ -209,4 +217,18 @@ footer{
         width: 200px;
     }
 
+}
+
+#container{
+    background-color: aliceblue;
+    width: 900px;
+    height: 600px;
+    margin: 50px auto auto auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    border: 2px black;
+}
+
+#MyInteraction{
+    Padding: 10px;
 }
