@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background-color: #242f6e;
+    background-color: #060644;
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -78,17 +78,12 @@ h1{
 
 p{
     color: rgb(220, 220, 240);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgb(23, 23, 39);
     margin-left: 10%;
     margin-right: 10%;
     width: 80vw;
-    height: 70px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 25px;
 }
 
 button{
@@ -111,6 +106,8 @@ button:hover{
 #img{
     width:70%;
     margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 article > ul{
@@ -153,7 +150,6 @@ article > ul{
     display: flex;
     justify-content:center;
     align-items: center;
-    height: 80px;
     gap: 40px;
 }
 
@@ -180,16 +176,16 @@ h4 > a{
     margin-left: 10%;
     margin-right: 10%;
     height: 70px;
-    width: 150px;
+    width: 300px;
     margin: 0 auto;
     padding: 10px;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 footer{
     background-color: #222831;
     color: white;
-    height: 150px;
     display: flex;
     justify-content: center;
     padding: 1%;
@@ -199,6 +195,18 @@ footer{
 
 @media screen and (max-width:1000px) {
     header{
-        height: 40px;
+        height: auto;
     }
+    nav{
+        width: 100%;
+    }
+
+    nav > ul{
+        display: block;
+    }
+
+    h4 > a{
+        width: 200px;
+    }
+
 }
