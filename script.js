@@ -25,7 +25,7 @@ let lokaties =
     {
         "titel": "Willem van de Velde & Zoon",
         "Description": "een gallerij vol kunsten van Willem van de Velde en zijn Zoon"
-        "ima    ge": "foto/WillemEnZoon.jpg",
+        "image": "foto/WillemEnZoon.jpg",
     },
     {
         "titel": "Hoofd gallerij",
