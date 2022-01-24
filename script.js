@@ -5,55 +5,60 @@ const myInput = document.getElementById("myInput");
 let lokaties = [
     {
         "titel":"Begin",
-        "image":"foto/windroos.png"
+        "image":"foto/windroos.png",
+
     },
     {
         "titel":"Havenstad",
-        "image":"foto/Havenstad.jpg"
+        "image":"foto/Havenstad.jpg",
+        
+    
     },
     {
         "titel":"Verhaal van de Walvis",
-        "image":"foto/Walvisverhaal.jpg"
+        "image":"foto/Walvisverhaal.jpg",
+
     },
     {
         "titel":"Willem van de Velde & Zoon",
-        "image":"foto/WillemEnZoon.jpg"
+        "image":"foto/WillemEnZoon.jpg",
+
     },
     {
         "titel":"Hoofd Gallerij",
-        "image":"foto/Hoofdgallerij.jpg"
+        "image":"foto/Hoofdgallerij.jpg",
     },
     {
         "titel":"VR Experience",
-        "image":"foto/VR room.jpg"
+        "image":"foto/VR room.jpg",
     },
     {
         "titel":"Koningssloep",
-        "image":"foto/Koningssloep.jpg"
+        "image":"foto/Koningssloep.jpg",
     },
     {
         "titel":"VOC Schip Amsterdam",
-        "image":"foto/VOCschip.jpg"
+        "image":"foto/VOCschip.jpg",
     },
     {
         "titel":"Stoomschip Christiaan Brunings",
-        "image":"foto/ChristiaanBrunings.jpg"
+        "image":"foto/ChristiaanBrunings.jpg",
     },
     {
         "titel":"Jachtmodellen",
-        "image":"foto/Jachtmodellen.jpg"
+        "image":"foto/Jachtmodellen.jpg",
     },
     {
         "titel":"Navigatie Instrumenten",
-        "image":"foto/NavigatieInstrumenten.jpg"
+        "image":"foto/NavigatieInstrumenten.jpg",
     },
     {
         "titel":"Scheeps Ornamenten",
-        "image":"foto/Ornamenten.jpg"
+        "image":"foto/Ornamenten.jpg",
     },
     {
         "titel":"Een verloren gewaand manuscript",
-        "image":"foto/Manuscript.jpg"
+        "image":"foto/Manuscript.jpg",
     }
 
 ]
@@ -67,5 +72,6 @@ function getInput(){
     show(myInput.value)
     console.log(myInput.value)
 }
+
 
 show(0);

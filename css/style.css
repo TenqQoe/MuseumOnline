@@ -284,15 +284,19 @@ footer{
 }
 
 #container{
-    background-color: aliceblue;
-    width: 900px;
+    background-color: aliceblue (170, 233, 238);
+    width: 50%  ;
     height: 600px;
-    margin: 50px auto auto auto;
+    margin: 80px;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 950px auto;
     border: 2px black;
 }
 
 #MyInteraction{
     Padding: 10px;
+}
+
+#myTitle{
+    color: aliceblue;
 }
