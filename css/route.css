@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+}
+
+#container{
+    background-color: aliceblue;
+    width: 800px;
+    height: 600px;
+    margin: 50px 370px 370px;
+    display:flexbox;
+    grid-template-columns: 50px auto auto auto;
+    border: inset 2px black;
+}
+
+img{
+    width: 50;
+    height: 75%;
+}
+
+#MyInteraction{
+    Padding: 10px;
+}
+
+#myTitle{
+    color: black;
+}
