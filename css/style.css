@@ -125,7 +125,7 @@ button:hover{
     padding-bottom: 25px;
 }
 
-#vleugel{
+.class{
     color: rgb(220, 220, 240);
     background-color: rgb(23, 23, 39);
     display: block;
@@ -136,7 +136,7 @@ button:hover{
     padding: 25px;
 }
 
-#vleugellist{
+.vleugellist{
     border-bottom: 3px solid black;
     display: block;
 }
@@ -173,7 +173,7 @@ article > ul{
     margin-bottom: 50px;
 }
 
-#reviews{
+.reviews{
     color: black;
     background-color: white;
     list-style: none;
@@ -184,7 +184,7 @@ article > ul{
     padding: 25px;
 }
 
-#reviewitem{
+.reviewitem{
     border: 5px solid rgb(10, 45, 78);
     padding: 5px;
 }
@@ -285,7 +285,7 @@ footer{
 
 #container{
     background-color: aliceblue (170, 233, 238);
-    width: 50%  ;
+    width: 50%;
     height: 600px;
     margin: 80px;
     display: grid;
