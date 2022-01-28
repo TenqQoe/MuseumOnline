@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: darkblue;
 }
 
 #container{
@@ -9,7 +9,7 @@ body{
     margin: 50px 370px 370px;
     display:flexbox;
     grid-template-columns: 50px auto auto auto;
-    border: inset 2px black;
+    border: inset 3px black;
 }
 
 img{
