@@ -83,7 +83,7 @@ let lokaties = [
         "titel":"Een verloren gewaand manuscript",
         "image":"foto/Manuscript.jpg",
         "text":"oude teksten over de Banda-eilanden",
-        "text2":"0 = verder naar begin"
+        "text2":"0 = verder naar begin, 11 = terug naar Scheeps Ornamenten"
     }
 
 
