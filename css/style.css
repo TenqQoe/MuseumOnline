@@ -283,6 +283,17 @@ footer{
 
 }
 
+@media screen and (max-width:400px) {
+   .reviews{
+       width: 100%;
+   }
+   h1{
+       width: 100%;
+   }
+   footer{
+       
+   }
+}
 
 #container{
     background-color: aliceblue (170, 233, 238);
